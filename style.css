@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --font-family:'Outfit', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+main {
+    background-color: var(--Very-dark-blue-card-BG);
+    padding: 1.5rem;
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-overlay {
+    display: grid;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    place-items: center;
+    background-color: var(--Cyan);
+    grid-template-areas: main;
+    margin-bottom: 20px;
+}
+
+.image-overlay > * {
+    grid-area: main;
+}
+
+.eye {
+    z-index: 0;
+}
+.Equilibrium {
+    max-width: 100%;
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.Equilibrium:hover {
+    opacity: 0.5;
+}
+
+.title {
+    color: var(--White);
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: var(--Cyan);
+}
+
+main > p {
+    color: var(--Soft-blue);
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.nest {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--Cyan);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--Soft-blue);
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+hr {
+    border:1px solid var(--Very-dark-blue-line);
+    margin-bottom: 10px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author img {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+}
+
+.author p {
+    color: var(--Soft-blue);
+    opacity: 0.7;
+}
+
+.name {
+    color: var(--White);
+    cursor: pointer;
+}
+
+.name:hover {
+    color: var(--Cyan);
+}
+
+@media (max-width:375px) {
+    main {
+        margin: 16px;
+    }
+}
+
+
+
+
