@@ -70,11 +70,12 @@ img {
 }
 
 .title {
+    display: block;
     color: var(--White);
     font-weight: 600;
     font-size: 26px;
-    margin-bottom: 20px;
     cursor: pointer;
+    margin-bottom: 15px;
     text-decoration: none;
 }
 
