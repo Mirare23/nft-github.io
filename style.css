@@ -44,9 +44,13 @@ img {
     overflow: hidden;
     cursor: pointer;
     place-items: center;
-    background-color: var(--Cyan);
+
     grid-template-areas: main;
     margin-bottom: 20px;
+}
+
+.image-overlay:hover {
+        background-color: var(--Cyan);
 }
 
 .image-overlay > * {
@@ -57,7 +61,6 @@ img {
     z-index: 0;
 }
 .Equilibrium {
-    max-width: 100%;
     border-radius: inherit;
     z-index: 1;
 }
@@ -72,6 +75,7 @@ img {
     font-size: 26px;
     margin-bottom: 20px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .title:hover {
@@ -135,7 +139,7 @@ hr {
 
 .name {
     color: var(--White);
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .name:hover {
