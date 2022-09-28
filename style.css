@@ -153,6 +153,17 @@ hr {
     }
 }
 
+@media (max-width: 350px) {
+    .nest {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+        gap: 5px;
+    }
+    }
+
 
 
 
